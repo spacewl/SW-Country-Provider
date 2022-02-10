@@ -3,8 +3,7 @@ apply plugin: "signing"
 
 task androidSourcesJar(type: Jar) {
     archiveClassifier.set("sources")
-    from android.sourceSets.main.java.srcDirs
-    from android.sourceSets.main.kotlin.srcDirs
+    from project.android.sourceSets.main.kotlin.srcDirs
 }
 
 artifacts {
@@ -15,16 +14,16 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                groupId PUBLISH_GROUP_ID
-                artifactId PUBLISH_ARTIFACT_ID
-                version PUBLISH_VERSION
+                groupId rootProject.ext["publishing.groupId"]
+                artifactId rootProject.ext["publishing.artifactId"]
+                version rootProject.ext["publishing.version"]
 
                 from components.release
 
                 artifact androidSourcesJar
 
                 pom {
-                    name = PUBLISH_ARTIFACT_ID
+                    name = rootProject.ext["publishing.artifactId"]
                     description = "Android Country provider provides information about country names, codes, vectors of a flag, and digital codes."
                     url = "https://github.com/spacewl/SW-Country-Provider"
                     licenses {
