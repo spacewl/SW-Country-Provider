@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="vector"
+    android:width="@dimen/flag_icon_width"
+    android:height="@dimen/flag_icon_height"
+    android:viewportWidth="640"
+    android:viewportHeight="480">
+    <group android:name="group">
+        <path
+            android:name="path"
+            android:pathData="M 0 0 L 640 0 L 640 480 L 0 480 Z"
+            android:fillColor="#ffffff"
+            android:strokeWidth="1" />
+        <path
+            android:name="path_1"
+            android:pathData="M 0 0 L 213.3 0 L 213.3 480 L 0 480 Z"
+            android:fillColor="#00267f"
+            android:strokeWidth="1" />
+        <path
+            android:name="path_2"
+            android:pathData="M 426.7 0 L 640 0 L 640 480 L 426.7 480 Z"
+            android:fillColor="#f31830"
+            android:strokeWidth="1" />
+    </group>
+</vector>

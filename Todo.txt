@@ -1,0 +1,38 @@
+Нет в JSON:
+
+bq
+cw
+eh
+sx Sint Maarten
+um United States Min
+
+
+пофиксить/добавить изображения:
+
+gm Gambia
+gn Guinea
+gp Guadeloupe
+gr Greece
+gs South Georgia and
+hn Honduras
+in India
+kr South Korea
+lk Sri Lanka
+lr Liberia
+ls Lesotho
+mm Myanmar
+nl Netherlands
+nz New Zealand
+re Réunion
+ro Romania
+rs Serbia
+ru Russia
+rw Rwanda
+sa Saudi Arabia
+sb Solomon Islands
+st Sao Tome and Princip
+tj Tajikistan
+uy Uruguay
+uz Uzbekistan
+ve Venezuela
+xk Kosovo

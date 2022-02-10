@@ -1,0 +1,59 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="vector"
+    android:width="@dimen/flag_icon_width"
+    android:height="@dimen/flag_icon_height"
+    android:viewportWidth="640"
+    android:viewportHeight="480">
+    <path
+        android:name="path"
+        android:pathData="M 0 -0.1 L 640 -0.1 L 640 160 L 0 160 Z"
+        android:fillColor="#fecb00"
+        android:strokeWidth="1" />
+    <path
+        android:name="path_1"
+        android:pathData="M 0 320 L 640 320 L 640 480 L 0 480 Z"
+        android:fillColor="#ea2839"
+        android:strokeWidth="1" />
+    <path
+        android:name="path_2"
+        android:pathData="M 0 160 L 640 160 L 640 320 L 0 320 Z"
+        android:fillColor="#34b233"
+        android:strokeWidth="1" />
+    <group android:name="group_4">
+        <group android:name="b">
+            <group android:name="group">
+                <path
+                    android:name="a"
+                    android:pathData="M 216.033 399.099 L 262.76 214.413 L 377.24 297.587 Z"
+                    android:fillColor="#ffffff"
+                    android:strokeWidth="353.759994508" />
+            </group>
+            <group android:name="group_1">
+                <path
+                    android:name="a_1"
+                    android:pathData="M 151.777 201.341 L 341.864 188.711 L 298.136 323.289 Z"
+                    android:fillColor="#ffffff"
+                    android:strokeWidth="353.759994509" />
+            </group>
+            <path
+                android:name="a_2"
+                android:pathData="M 320 79.12 L 390.752 256 L 249.248 256 Z"
+                android:fillColor="#ffffff"
+                android:strokeWidth="353.759994507" />
+            <group android:name="group_2">
+                <path
+                    android:name="a_3"
+                    android:pathData="M 488.223 201.341 L 341.864 323.289 L 298.136 188.711 Z"
+                    android:fillColor="#ffffff"
+                    android:strokeWidth="353.759994509" />
+            </group>
+            <group android:name="group_3">
+                <path
+                    android:name="a_4"
+                    android:pathData="M 423.967 399.099 L 262.76 297.587 L 377.24 214.413 Z"
+                    android:fillColor="#ffffff"
+                    android:strokeWidth="353.759994508" />
+            </group>
+        </group>
+    </group>
+</vector>

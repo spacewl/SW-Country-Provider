@@ -1,0 +1,77 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="vector"
+    android:width="@dimen/flag_icon_width"
+    android:height="@dimen/flag_icon_height"
+    android:viewportWidth="640"
+    android:viewportHeight="480">
+    <path
+        android:name="path"
+        android:pathData="M 0 0 L 640 0 L 640 53.3 L 0 53.3 Z"
+        android:fillColor="#005bae"
+        android:strokeWidth="1"
+        android:fillType="evenOdd" />
+    <path
+        android:name="path_1"
+        android:pathData="M 0 53.3 L 640 53.3 L 640 106.7 L 0 106.7 Z"
+        android:fillColor="#ffffff"
+        android:strokeWidth="1"
+        android:fillType="evenOdd" />
+    <path
+        android:name="path_2"
+        android:pathData="M 0 106.7 L 640 106.7 L 640 160 L 0 160 Z"
+        android:fillColor="#005bae"
+        android:strokeWidth="1"
+        android:fillType="evenOdd" />
+    <path
+        android:name="path_3"
+        android:pathData="M 0 160 L 640 160 L 640 213.3 L 0 213.3 Z"
+        android:fillColor="#ffffff"
+        android:strokeWidth="1"
+        android:fillType="evenOdd" />
+    <path
+        android:name="path_4"
+        android:pathData="M 0 0 L 266.7 0 L 266.7 266.7 L 0 266.7 Z"
+        android:fillColor="#005bae"
+        android:strokeWidth="1" />
+    <path
+        android:name="path_5"
+        android:pathData="M 0 213.3 L 640 213.3 L 640 266.7 L 0 266.7 Z"
+        android:fillColor="#005bae"
+        android:strokeWidth="1"
+        android:fillType="evenOdd" />
+    <path
+        android:name="path_6"
+        android:pathData="M 0 266.7 L 640 266.7 L 640 320 L 0 320 Z"
+        android:fillColor="#ffffff"
+        android:strokeWidth="1"
+        android:fillType="evenOdd" />
+    <path
+        android:name="path_7"
+        android:pathData="M 0 320 L 640 320 L 640 373.3 L 0 373.3 Z"
+        android:fillColor="#005bae"
+        android:strokeWidth="1"
+        android:fillType="evenOdd" />
+    <path
+        android:name="path_8"
+        android:pathData="M 0 373.3 L 640 373.3 L 640 426.7 L 0 426.7 Z"
+        android:fillColor="#ffffff"
+        android:strokeWidth="1"
+        android:fillType="evenOdd" />
+    <group android:name="group">
+        <path
+            android:name="path_9"
+            android:pathData="M 106.667 0 L 160 0 L 160 266.666 L 106.667 266.666 Z"
+            android:fillColor="#ffffff"
+            android:strokeWidth="1" />
+        <path
+            android:name="path_10"
+            android:pathData="M 0 106.667 L 266.666 106.667 L 266.666 160 L 0 160 Z"
+            android:fillColor="#ffffff"
+            android:strokeWidth="1" />
+    </group>
+    <path
+        android:name="path_11"
+        android:pathData="M 0 426.7 L 640 426.7 L 640 480 L 0 480 Z"
+        android:fillColor="#005bae"
+        android:strokeWidth="1" />
+</vector>

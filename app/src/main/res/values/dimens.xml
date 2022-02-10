@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="flag_icon_width">64dp</dimen>
+    <dimen name="flag_icon_height">48dp</dimen>
+</resources>

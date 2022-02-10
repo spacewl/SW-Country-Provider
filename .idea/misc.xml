@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-nodpi/ic_ac.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_ad.xml" value="0.324" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_ae.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_af.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_ag.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_ai.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_al.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_am.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_an.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_ao.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_aq.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_ar.xml" value="0.8429987182617188" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_as.xml" value="0.28466235351562497" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_at.xml" value="0.223" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_au.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_aw.xml" value="0.223" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_ax.xml" value="0.223" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_az.xml" value="0.223" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_bb.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_be.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_bh.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_bi.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_bj.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_bl.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_bm.xml" value="0.9822504272460938" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_bn.xml" value="0.30166571044921875" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_bo.xml" value="0.9303013916015624" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_bz.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_cg.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_dk.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_dm.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_do.xml" value="0.9880767822265626" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_ec.xml" value="0.5189768066406251" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_et.xml" value="0.32029669189453125" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_fj.xml" value="0.5678369750976563" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_fk.xml" value="0.6311823120117188" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_gd.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_gh.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_gm.xml" value="0.168" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_gp.xml" value="0.168" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_gq.xml" value="0.5891052246093751" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_gs.xml" value="0.45564892578125005" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_gt.xml" value="0.9400726318359376" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_gu.xml" value="0.6230753173828127" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_hk.xml" value="0.5400919189453126" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_hm.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_hn.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_ht.xml" value="0.7217691650390625" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_io.xml" value="0.124" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_kg.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_ky.xml" value="0.344" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_ls.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_md.xml" value="0.2685" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_me.xml" value="0.602935791015625" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_mn.xml" value="0.5567611694335938" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_mp.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_mr.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_ni.xml" value="0.1405" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_nz.xml" value="0.5" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_pf.xml" value="0.1855" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_pl.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_sb.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_ua.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_unknown.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_uz.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_va.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_vc.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_ve.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_vg.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_vi.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_vn.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_vu.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_wf.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_ws.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_ye.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_yt.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_za.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_zm.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_zw.xml" value="0.2995" />
+        <entry key="app/src/main/res/drawable/ic_ic_launcher_background.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1405" />
+        <entry key="app/src/main/res/drawable/ic_resource_do.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable/ic_xk.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_test.xml" value="0.10179595947265624" />
+        <entry key="app/src/main/res/layout/item_country.xml" value="0.328125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

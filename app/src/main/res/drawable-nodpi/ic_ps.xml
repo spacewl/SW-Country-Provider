@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/flag_icon_width"
+    android:height="@dimen/flag_icon_height"
+    android:viewportWidth="640"
+    android:viewportHeight="480">
+    <group>
+        <clip-path android:pathData="M-0.025,0l640.031,0l0,480L-0.025,480z" />
+        <path
+            android:fillColor="#FF000000"
+            android:pathData="M-120.025,0L839.975,0l0,160.031L-120.025,160.031z"
+            android:strokeWidth="1"
+            android:fillType="evenOdd" />
+        <path
+            android:pathData="M-120.025,160.031L839.975,160.031l0,159.938L-120.025,319.969z"
+            android:strokeWidth="1"
+            android:fillColor="#fff"
+            android:fillType="evenOdd" />
+        <path
+            android:pathData="M-120.025,319.969L839.975,319.969L839.975,480L-120.025,480z"
+            android:strokeWidth="1"
+            android:fillColor="#090"
+            android:fillType="evenOdd" />
+        <path
+            android:pathData="m-120.025,480 l480,-240L-120.025,0l0,480z"
+            android:strokeWidth="1"
+            android:fillColor="#ff0000"
+            android:fillType="evenOdd" />
+    </group>
+</vector>

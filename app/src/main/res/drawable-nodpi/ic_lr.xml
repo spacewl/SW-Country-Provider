@@ -1,0 +1,39 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="vector"
+    android:width="@dimen/flag_icon_width"
+    android:height="@dimen/flag_icon_height"
+    android:viewportWidth="640"
+    android:viewportHeight="480">
+    <group android:name="wrapper">
+        <clip-path
+            android:name="lr_a"
+            android:pathData="M 0 0 L 640.031 0 L 640.031 480 L 0 480 Z" />
+        <group android:name="group">
+            <path
+                android:name="path"
+                android:pathData="M 0 0 L 719.906 0 L 719.906 480 L 0 480 Z"
+                android:fillColor="#ffffff"
+                android:strokeWidth="0.937500119" />
+            <path
+                android:name="path_1"
+                android:pathData="M 0 0 L 218.156 0 L 218.156 218.25 L 0 218.25 Z"
+                android:fillColor="#000066"
+                android:strokeWidth="0.937500119" />
+            <path
+                android:name="path_2"
+                android:pathData="M 0 435.844 L 719.906 435.844 L 719.906 480 L 0 480 Z"
+                android:fillColor="#cc0000"
+                android:strokeWidth="0.937500119" />
+            <path
+                android:name="path_3"
+                android:pathData="M 0 436.313 L 719.906 436.313 L 719.906 480 L 0 480 Z M 0 349.219 L 719.906 349.219 L 719.906 392.531 L 0 392.531 Z M 0 261.844 L 718.125 261.844 L 718.125 305.625 L 0 305.625 Z M 218.156 0 L 719.813 0 L 719.813 43.594 L 218.156 43.594 Z M 218.156 174.375 L 719.813 174.375 L 719.813 218.25 L 218.156 218.25 Z M 218.156 87.469 L 719.813 87.469 L 719.813 131.063 L 218.156 131.063 Z"
+                android:fillColor="#cc0000"
+                android:strokeWidth="0.937500119" />
+            <path
+                android:name="path_4"
+                android:pathData="M 155.906 166.406 L 108.375 137.344 L 61.125 166.688 L 78.656 118.969 L 31.5 89.531 L 89.906 89.156 L 108 41.625 L 126.563 89.063 L 184.969 89.063 L 138 118.781 L 155.906 166.406 Z"
+                android:fillColor="#ffffff"
+                android:strokeWidth="0.937500119" />
+        </group>
+    </group>
+</vector>
