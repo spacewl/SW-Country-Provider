@@ -1,31 +1,46 @@
 package com.spacewl.countryprovider
 
+import android.annotation.SuppressLint
 import android.content.Context
-import com.google.gson.GsonBuilder
-import com.google.gson.reflect.TypeToken
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.Types
 
 object CountryProvider {
-    private val gson by lazy { GsonBuilder().create() }
+    private val type = Types.newParameterizedType(List::class.java, SettingCountry::class.java)
+    private val moshi = Moshi.Builder()
+        .build()
 
     fun fetchCountries(context: Context): List<Country> {
         val json = LoaderHelper.loadRaw(context, R.raw.country_dial_info)
-        return gson.fromJson<List<SettingCountry>?>(json, object : TypeToken<List<SettingCountry>>() {}.type)
-            .map { country ->
+        return moshi.adapter<List<SettingCountry>>(type)
+            .fromJson(json)
+            ?.map { country ->
                 Country(
                     name = country.name,
-                    flagIcon = flagIdByName(
-                        name = "ic_${country.code.lowercase()}",
-                        context = context
+                    flagIcon = flagIconByCode(
+                        context = context,
+                        countryCode = country.code
                     ),
                     code = country.code,
                     dialCode = country.dialCode
                 )
-            }
+            } ?: emptyList()
     }
 
+    fun flagIconByCode(
+        context: Context,
+        countryCode: String
+    ): Int {
+        return flagIdByName(
+            context = context,
+            name = "ic_${countryCode.lowercase()}",
+        )
+    }
+
+    @SuppressLint("DiscouragedApi")
     private fun flagIdByName(
-        name: String,
-        context: Context
+        context: Context,
+        name: String
     ): Int {
         return try {
             val drawableId = context.resources.getIdentifier(name, "drawable", context.packageName)

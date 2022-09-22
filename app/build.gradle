@@ -1,18 +1,19 @@
 plugins {
     id "com.android.library"
     id "org.jetbrains.kotlin.android"
+    id "kotlin-kapt"
 }
 
 apply from: "${rootDir}/scripts/publish-module.gradle"
 
 android {
-    compileSdk 31
+    compileSdk 33
 
     defaultConfig {
-        minSdk 25
-        targetSdk 31
-        versionCode 3
-        versionName "1.0"
+        minSdk 21
+        targetSdk 33
+        versionCode 4
+        versionName "1.1"
     }
 
     buildTypes {
@@ -34,7 +35,8 @@ android {
 }
 
 dependencies {
-    implementation "androidx.core:core-ktx:1.7.0"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1"
-    implementation "com.google.code.gson:gson:2.8.9"
+    implementation "androidx.core:core-ktx:1.9.0"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
+    implementation "com.squareup.moshi:moshi:1.13.0"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:1.13.0"
 }
