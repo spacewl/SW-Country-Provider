@@ -1,19 +1,21 @@
 plugins {
     id "com.android.library"
     id "org.jetbrains.kotlin.android"
-    id "kotlin-kapt"
+    id "com.google.devtools.ksp"
+    id "maven-publish"
+    id "signing"
 }
 
-apply from: "${rootDir}/scripts/publish-module.gradle"
-
 android {
-    compileSdk 33
+    compileSdk 34
+
+    namespace "com.spacewl.countryprovider"
 
     defaultConfig {
         minSdk 21
-        targetSdk 33
-        versionCode 4
-        versionName "1.1"
+        targetSdkVersion 34
+        versionCode 5
+        versionName "1.2"
     }
 
     buildTypes {
@@ -22,21 +24,74 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
         }
     }
-    buildFeatures {
-        viewBinding true
-    }
+
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
+
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
+    }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
     }
 }
 
 dependencies {
-    implementation "androidx.core:core-ktx:1.9.0"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
-    implementation "com.squareup.moshi:moshi:1.13.0"
-    kapt "com.squareup.moshi:moshi-kotlin-codegen:1.13.0"
+    implementation "androidx.core:core-ktx:1.12.0"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
+    implementation "com.squareup.moshi:moshi:1.14.0"
+    ksp "com.squareup.moshi:moshi-kotlin-codegen:1.14.0"
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId rootProject.ext["publishing.groupId"]
+                artifactId rootProject.ext["publishing.artifactId"]
+                version rootProject.ext["publishing.version"]
+
+                pom {
+                    name = rootProject.ext["publishing.artifactId"]
+                    description = "Android Country provider provides information about country names, codes, vectors of a flag, and digital codes."
+                    url = "https://github.com/spacewl/SW-Country-Provider"
+                    licenses {
+                        license {
+                            name = "The Apache License, Version 2.0"
+                            url = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+                        }
+                    }
+                    developers {
+                        developer {
+                            id = "tu3off"
+                            name = "Andrii Tuzov"
+                            email = "andriituzov@gmail.com"
+                        }
+                    }
+
+                    scm {
+                        connection = "scm:git:github.com/spacewl/SW-Country-Provider.git"
+                        developerConnection = "scm:git:ssh://github.com/spacewl/SW-Country-Provider.git"
+                        url = "https://github.com/spacewl/SW-Country-Provider/tree/main"
+                    }
+                }
+            }
+        }
+    }
+}
+
+signing {
+    useInMemoryPgpKeys(
+            rootProject.ext["signing.keyId"],
+            rootProject.ext["signing.key"],
+            rootProject.ext["signing.password"]
+    )
+    sign publishing.publications
 }

@@ -12,9 +12,6 @@ object LoaderHelper {
     ): String {
         return context.resources
             .openRawResource(rawResId)
-            .use {
-             it.bufferedReader(Charsets.UTF_8)
-                 .use(BufferedReader::readText)
-            }
+            .use { it.bufferedReader(Charsets.UTF_8).use(BufferedReader::readText) }
     }
 }

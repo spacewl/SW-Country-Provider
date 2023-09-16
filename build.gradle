@@ -1,11 +1,34 @@
 plugins {
-    id "com.android.library" version "7.3.0" apply false
-    id "org.jetbrains.kotlin.android" version "1.7.10" apply false
-    id "io.github.gradle-nexus.publish-plugin" version "1.1.0" apply true
+    id "com.android.library" version "8.1.0" apply false
+    id "org.jetbrains.kotlin.android" version "1.9.10" apply false
+    id "com.google.devtools.ksp" version "1.9.10-1.0.13" apply false
+    id "io.github.gradle-nexus.publish-plugin" version "1.3.0" apply true
 }
 
-apply from: "${rootDir}/scripts/publish-project.gradle"
+// ./gradlew publishAllPublicationsToSonatypeRepository
 
-task clean(type: Delete) {
+File secretPropsFile = project.rootProject.file("${rootDir}/publisher.properties")
+
+if (secretPropsFile.exists()) {
+    Properties properties = new Properties()
+    new FileInputStream(secretPropsFile).withCloseable { is -> properties.load(is) }
+    properties.each { name, value -> rootProject.ext[name] = value }
+} else {
+    throw IllegalAccessException("Setup publisher.properties")
+}
+
+nexusPublishing {
+    repositories {
+        sonatype {
+            stagingProfileId = rootProject.ext["sonatypeStagingProfileId"]
+            username = rootProject.ext["ossrhUsername"]
+            password = rootProject.ext["ossrhPassword"]
+            nexusUrl.set(uri("https://s01.oss.sonatype.org/service/local/"))
+            snapshotRepositoryUrl.set(uri("https://s01.oss.sonatype.org/content/repositories/snapshots/"))
+        }
+    }
+}
+
+tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }

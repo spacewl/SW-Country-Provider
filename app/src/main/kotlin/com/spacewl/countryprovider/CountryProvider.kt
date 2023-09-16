@@ -1,3 +1,5 @@
+@file:Suppress("unused", "MemberVisibilityCanBePrivate")
+
 package com.spacewl.countryprovider
 
 import android.annotation.SuppressLint
@@ -7,8 +9,7 @@ import com.squareup.moshi.Types
 
 object CountryProvider {
     private val type = Types.newParameterizedType(List::class.java, SettingCountry::class.java)
-    private val moshi = Moshi.Builder()
-        .build()
+    private val moshi = Moshi.Builder().build()
 
     fun fetchCountries(context: Context): List<Country> {
         val json = LoaderHelper.loadRaw(context, R.raw.country_dial_info)
@@ -27,10 +28,7 @@ object CountryProvider {
             } ?: emptyList()
     }
 
-    fun flagIconByCode(
-        context: Context,
-        countryCode: String
-    ): Int {
+    fun flagIconByCode(context: Context, countryCode: String): Int {
         return flagIdByName(
             context = context,
             name = "ic_${countryCode.lowercase()}",
@@ -38,10 +36,7 @@ object CountryProvider {
     }
 
     @SuppressLint("DiscouragedApi")
-    private fun flagIdByName(
-        context: Context,
-        name: String
-    ): Int {
+    fun flagIdByName(context: Context, name: String): Int {
         return try {
             val drawableId = context.resources.getIdentifier(name, "drawable", context.packageName)
             if (drawableId == 0) R.drawable.ic_unknown else drawableId
